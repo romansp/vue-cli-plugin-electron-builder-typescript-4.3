@@ -9,6 +9,14 @@
 import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
 
+export class Foo { 
+  private bar = "";
+
+  public getBar() {
+    return this.bar
+  }
+}
+
 export default Vue.extend({
   name: 'App',
   components: {
