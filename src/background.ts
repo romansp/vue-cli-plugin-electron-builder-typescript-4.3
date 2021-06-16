@@ -10,6 +10,14 @@ protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } }
 ])
 
+export class Foo { 
+  private bar = "";
+
+  public getBar() {
+    return this.bar
+  }
+}
+
 async function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
